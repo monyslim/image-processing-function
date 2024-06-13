@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Image from S3 via CloudFront</title>
+</head>
+<body>
+    <h1>Image from S3 via CloudFront</h1>
+    <img id="s3-image" alt="Image from S3" width="500">
+    
+    <script>
+        // URL of the image served by CloudFront
+        const imageUrl = 'https://d2jqnqxe2d0ghu.cloudfront.net/John+Wick+Wallpapers+75+images.jpg';
+
+        // Setting the src attribute of the image element
+        document.getElementById('s3-image').src = imageUrl;
+    </script>
+</body>
+</html>
